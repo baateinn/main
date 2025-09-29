@@ -8,15 +8,11 @@ const MusicToggle = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Create audio element with a free lofi track
-    // In a real app, you'd host your own audio file
+    // Create audio element with a lofi track
     audioRef.current = new Audio();
     audioRef.current.loop = true;
     audioRef.current.volume = volume;
-    
-    // For demo purposes, we'll use a placeholder
-    // You would replace this with your actual lofi/chill music file
-    // audioRef.current.src = '/path/to/your/lofi-music.mp3';
+    audioRef.current.src = 'https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3';
     
     return () => {
       if (audioRef.current) {

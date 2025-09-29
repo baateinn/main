@@ -4,7 +4,6 @@ import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import MinecraftSection from '@/components/MinecraftSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import StaffApplicationForm from '@/components/StaffApplicationForm';
 import MusicToggle from '@/components/MusicToggle';
 import Footer from '@/components/Footer';
 
@@ -21,7 +20,6 @@ const Index = () => {
         <FeaturesSection />
         <MinecraftSection />
         <TestimonialsSection />
-        <StaffApplicationForm />
       </main>
       
       {/* Footer */}

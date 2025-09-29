@@ -1,7 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { Heart, Users, Gamepad2, Crown } from 'lucide-react';
-import bannerImage from '@/assets/banner.webp';
-import logoImage from '@/assets/logo.png';
+import bannerImage from '@/assets/banner.gif';
+import logoImage from '@/assets/logo.gif';
+import StaffApplicationDialog from '@/components/StaffApplicationDialog';
 
 const HeroSection = () => {
   return (
@@ -79,10 +80,7 @@ const HeroSection = () => {
             </Button>
           </a>
           
-          <Button variant="gaming" size="xl">
-            <Gamepad2 className="w-5 h-5 mr-2" />
-            Explore Community
-          </Button>
+          <StaffApplicationDialog />
         </div>
       </div>
     </section>
